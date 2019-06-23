@@ -1,2 +1,6 @@
-# UniShare
-Progetto del corso di Ingegneria del Software svolto presso Università degli Studi di Salerno dal gruppo composto da Federica Ungherese, Donatella Cioffi, Luigi Di Palma, Daniele De Vinco, 2018-2019
+# UniShare [![Build Status](https://travis-ci.org/ddevin96/UniShare.svg?branch=master)](https://travis-ci.org/ddevin96/UniShare)
+Progetto Universitario
+Corso "Ingegneria del Software" - prof.ssa Filomena Ferrucci
+
+JavaDoc documentation
+http://unisharedoc.altervista.org/

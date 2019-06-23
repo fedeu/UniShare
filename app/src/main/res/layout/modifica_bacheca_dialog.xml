@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/pacifico"
+        android:text="@string/modify_bacheca"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextTitoloBacheca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/title"/>
+
+
+    <EditText
+        android:id="@+id/editTextDescriptionBacheca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/description"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/modificaBachecaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Modifica"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/acme"/>
+
+        <Button
+            android:id="@+id/cancellaBachecaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20sp"
+            android:text="Cancella"
+            android:fontFamily="@font/acme"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

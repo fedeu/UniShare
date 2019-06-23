@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".RicercaProfiloActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchbarUtente"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grigio_searchbar"
+            android:fontFamily="@font/alef"
+            android:hint="@string/search_user"
+            android:paddingLeft="10dp"
+            android:paddingBottom="3.5dp" />
+
+        <Button
+            android:id="@+id/searchUtenteButton"
+            style="@style/buttonStyle"
+            android:layout_width="55dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:text="cerca"
+            android:fontFamily="@font/acme"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewUtenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/labelNomeCercato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/acme"
+        android:textStyle="bold"
+        android:text="@string/name"/>
+
+    <TextView
+        android:id="@+id/textViewNomeUtenteCercato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/alef"/>
+
+    <TextView
+        android:id="@+id/labelCognomeCercato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/acme"
+        android:text="@string/surname"/>
+
+    <TextView
+        android:id="@+id/textViewCognomeUtenteCercato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/nero"/>
+
+    <TextView
+        android:id="@+id/labelEmailCercato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/email"
+        android:fontFamily="@font/acme"
+        android:textColor="@color/nero"/>
+
+    <TextView
+        android:id="@+id/textViewEmailUtenteCercato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/alef" />
+
+    <TextView
+        android:id="@+id/labelSessoCercato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/sex"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/acme"/>
+
+    <TextView
+        android:id="@+id/textViewSessoUtenteCercato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/nero"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/labelDataCercato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/birth"
+        android:textColor="@color/nero"
+        android:fontFamily="@font/acme"
+        />
+
+    <TextView
+        android:id="@+id/textViewDataUtenteCercato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/nero"
+        android:textSize="18sp"
+        android:fontFamily="@font/alef"/>
+
+
+</LinearLayout>

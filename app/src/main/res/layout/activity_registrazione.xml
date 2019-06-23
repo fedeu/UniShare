@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrazioneActivity"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:requiresFadingEdge="horizontal|vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pacifico"
+            android:gravity="center"
+            android:text="@string/register_to_unishare"
+            android:textColor="@color/nero"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/editTextRegNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:fontFamily="@font/alef"
+            android:hint="@string/insert_name" />
+
+        <EditText
+            android:id="@+id/editTextRegCognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/alef"
+            android:hint="@string/insert_surname" />
+
+        <EditText
+            android:id="@+id/editTextRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/alef"
+            android:hint="@string/insert_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/alef"
+            android:hint="@string/insert_pass"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextRegRipetiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/alef"
+            android:hint="@string/confirm_pass"
+            android:inputType="textPassword" />
+
+        <DatePicker
+            android:id="@+id/editDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="20sp"
+
+            android:calendarTextColor="@color/nero"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"></DatePicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/alef"
+            android:text="@string/insert_sex"
+            android:textColor="@color/nero"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioUomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:fontFamily="@font/alef"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioDonna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/alef"
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/alef"
+            android:text="@string/privacy"
+            android:textColor="@color/nero"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkboxPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/alef"
+            android:checked="true"
+            android:text="@string/accept_privacy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonRegistrazione"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/register"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/buttonGiaRegistrato"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:fontFamily="@font/acme"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:text="@string/already_signed"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
